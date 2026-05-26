@@ -6,7 +6,8 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/abhiram-bency/Predictive-fleet-maintenance-model-'
+                git branch: 'main',
+                url: 'https://github.com/abhiram-bency/Predictive-fleet-maintenance-model-.git'
             }
         }
 
