@@ -104,10 +104,10 @@ st.markdown("""
 @st.cache_resource
 def load_model():
     try:
-        with open('models/fleet_maintenance_prediction_model_cpu', 'rb') as f:
+        with open('model/fleet_maintenance_prediction_model_cpu', 'rb') as f:
             model = pickle.load(f)
         
-        with open('columns.json', 'r') as f:
+        with open('model/columns.json', 'r') as f:
             columns = json.load(f)['data_columns']
         
         return model, columns
@@ -119,7 +119,7 @@ def load_model():
 @st.cache_data
 def load_sample_data():
     try:
-        data = pd.read_csv("data/balanced_fleet_maintenance_schedule_2.csv")
+        data = pd.read_csv("dataset/balanced_fleet_maintenance_schedule_2.csv")
         return data
     except:
         return None

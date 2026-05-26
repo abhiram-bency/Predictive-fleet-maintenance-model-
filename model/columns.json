@@ -1,0 +1,17 @@
+{
+    "data_columns": [
+        "mileage_km",
+        "fuel_consumption_l_per_100km",
+        "engine_hours",
+        "number_of_trips",
+        "engine_temperature_c",
+        "tire_pressure_psi",
+        "battery_voltage_v",
+        "oil_level_l",
+        "vibration_units",
+        "noise_level_db",
+        "breakdown_incidents",
+        "part_replacements",
+        "service_history"
+    ]
+}
