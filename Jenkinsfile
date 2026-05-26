@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'YOUR_GITHUB_REPOSITORY_URL'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 bat 'docker build -t fleet-maintenance-app .'
